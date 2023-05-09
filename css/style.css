@@ -552,7 +552,7 @@ transition-property: background-color;
 }
 
 .links-portfolio:hover,
-.links-portfolio: :focus {
+.links-portfolio:focus {
   transform: translateY(0%);
 }
 
@@ -638,7 +638,7 @@ transition-property: ;
   top: 50%;
 
   width: 408px;
-  min-height: 584px;
+  min-height: 576px;
 
   transform: translate(-50%, -50%);
 
@@ -656,17 +656,27 @@ transition-property: ;
   display: flex;
   justify-content: center;
   align-items: center;
-  pad: 0;
+  padding: 0;
 
   width: 24px;
   height: 24px;
   background: #E7E9FC;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
 }
 
 .modal-close-icon {
   fill: rgba(46, 47, 66, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* OVERLAY */
@@ -674,17 +684,6 @@ transition-property: ;
   position: relative;
   overflow: hidden;
 }
-
-/* .overlay {
-  position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(100%);
-    width: 100%;
-    height: 100%;
-    transition: transform var(--animation-time);
-
-} */
 
 .portfolio-thumb:hover .overlay-text {
   transform: translateY(0%);
