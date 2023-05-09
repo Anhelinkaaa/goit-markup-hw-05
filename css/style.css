@@ -675,6 +675,10 @@ transition-property: ;
 fill: #ffffff;
 }
 
+.modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* OVERLAY */
 .portfolio-thumb {
   position: relative;
