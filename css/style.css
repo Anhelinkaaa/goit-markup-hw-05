@@ -5,6 +5,11 @@
   --acent-color: rgba(77, 90, 229, 1);
   --ident--: 24px;
   --items--: 4;
+  
+  /* Animation */
+  --animation-time: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 body {
@@ -48,6 +53,10 @@ ol {
 a {
   text-decoration: none;
 }
+
+.section {
+  padding: 120px 0px;
+}
 /* -- Navigation -- */
 .list-items {
   font-family: 'Roboto';
@@ -59,6 +68,9 @@ a {
   color: var(--main-color);
   padding: 24px 0;
   display: block;
+  transition-property: color;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--transition-timing);
 }
 
 .link {
@@ -74,6 +86,10 @@ a {
   text-transform: uppercase;
   color: var(--acent-color);
   margin-right: 76px;
+
+  transition-property: color;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--transition-timing);
 }
 .logo:hover,
 .logo:focus {
@@ -113,6 +129,27 @@ display: flex;
 align-items: center;
 }
 
+.heder-nav {
+  position: relative;
+}
+
+.nav-list-item::after {
+  content: "";
+  position: absolute;
+    left: 0px;
+    top: 44px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+   
+    border-radius: 2px;
+}
+
+.active::after {
+background: #404BBF;
+}
+
 .addres-list {
   display: flex;
   align-items: center;
@@ -128,6 +165,9 @@ align-items: center;
   letter-spacing: 0.02em;
   color: var(--second-color);
   padding: 24px 0;
+  transition-property: color;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--transition-timing);
 }
 .contact-inf:hover,
 .contact-inf:focus {
@@ -167,6 +207,9 @@ align-items: center;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--transition-timing);
 }
 .main-btn:focus,
 .main-btn:hover {
@@ -234,7 +277,11 @@ align-items: center;
   cursor: pointer;
   border-radius: 4px;
   padding: 12px 24px;
-  border: 1px solid #e7e9fc
+  border: 1px solid #e7e9fc;
+  transition-property: color, background-color;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--transition-timing);
+  
 }
 .flter-list {
   display: flex;
@@ -248,7 +295,7 @@ align-items: center;
 .filter:hover,
 .filter:focus {
   color: rgba(255, 255, 255, 1);
-  background: #404BBF;
+  background-color: #404BBF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -273,9 +320,6 @@ align-items: center;
   align-items: center;
 }
 
-.section {
-  padding: 120px 0px;
-}
 
 .subtitle-about-us {
   margin-bottom: 8px;
@@ -337,9 +381,11 @@ align-items: center;
 .subtitle-about-work {
   margin-bottom: 8px;
   margin-top: 32px;
+  margin-left: 16px;
 }
 .text-about-work {
   margin-bottom: 32px;
+  margin-left: 16px;
 }
 
 .logo-footer {
@@ -360,6 +406,9 @@ align-items: center;
 
 .card-portfolio {
   width: calc((100% - 48px) / 3);
+  transition-property: box-shadow;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--transition-timing);
 }
 
 .card-portfolio:hover,
@@ -383,10 +432,12 @@ align-items: center;
   background-size: cover;
   max-width: 1440px;
   height: 600px;
+  margin: 0 auto;
 }
 .nav-list {
   display: flex;
   gap: 40px;
+  position: relative;
 }
 
 .social-list {
@@ -408,6 +459,9 @@ fill: rgba(244, 244, 253, 1);
   height: 40px;
   background-color: rgba(77, 90, 229, 1);
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--transition-timing);
 }
 .social-link:hover,
 .social-link:focus {
@@ -437,6 +491,9 @@ fill: rgba(244, 244, 253, 1);
     width: 168px;
     height: 88px;
     /* gap: 24px; */
+    transition-property: fill;
+      transition-duration: var(--animation-time);
+      transition-timing-function: var(--transition-timing);
 }
 
 .partner-logo {
@@ -469,6 +526,9 @@ background-color:#4d5ae5;
 width: 100%;
 height: 100%;
 border-radius: 50%;
+transition-property: background-color;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--transition-timing);
 }
 
 .social-link-footer:hover,
@@ -482,6 +542,9 @@ border-radius: 50%;
 
 .links-portfolio {
   display: block;
+  transition-property: box-shadow;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--transition-timing);
 }
 
 .links-portfolio:hover,
@@ -503,6 +566,9 @@ border-radius: 50%;
   justify-content: center;
   align-items: center;
   color: #8e8f99;
+  transition-property: border-color, color;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--transition-timing);
 }
 
 .partner-link:hover,
@@ -530,3 +596,104 @@ border-radius: 50%;
   margin-bottom: 16px;
 }
 
+/* MODAL WINDOW */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+  transition: opacity var(--animation-time),
+              visibility var(--animation-time);
+  /* display: none; */
+}
+
+.is-hidden {
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+
+transition-property: ;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 408px;
+  height: 584px;
+
+  transform: translate(-50%, -50%);
+
+  background: #FCFCFC;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  left: 360px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pad: 0;
+
+  width: 24px;
+  height: 24px;
+  background: #E7E9FC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.modal-close-icon {
+  fill: rgba(46, 47, 66, 1);
+}
+
+/* OVERLAY */
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px 164px 32px;
+    background-color: rgba(77, 90, 229, 1);
+    transition: transform var(--animation-time);
+
+}
+
+.card-portfolio:hover .overlay {
+  transform: translateY(0%);
+}
+
+.overlay-text {
+font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  line-height:1.5 ;
+
+
+  letter-spacing: 0.02em;
+
+  color: #F4F4FD;
+}

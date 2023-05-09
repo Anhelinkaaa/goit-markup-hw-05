@@ -1,199 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="heder-style">
-      <div class="heder-container container">
-        <nav class="nav">
-          <a class="logo link" href="./index.html">Web<span class="logo-part-top">Studio</span></a>
-          <ul class="nav-list list">
-            <li><a class="list-items link" href="./index.html">Studio</a></li>
-            <li>
-              <a class="list-items link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li><a class="list-items link" href="">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="addres-list list">
-            <li>
-              <a class="contact-inf link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-              <a class="contact-inf link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header>
-    <main>
-      <section class="portfolio-section">
-        <div class="container">
-          <h1 hidden>Portfolio</h1>
-          <ul class="list flter-list">
-            <li><button class="filter" type="button">All</button></li>
-            <li><button class="filter" type="button">Web Site</button></li>
-            <li><button class="filter" type="button">App</button></li>
-            <li><button class="filter" type="button">Design</button></li>
-            <li><button class="filter" type="button">Marketing</button></li>
-          </ul>
-          <ul class="list card-list-portfolio">
-            <li class="card-portfolio">
-              <a class="link links-portfolio" href=""
-                ><img
-                  width="360"
-                  src="./images/banking-app.jpg"
-                  alt="Image with phone App"
-                />
-                <div class="portfolio-items">
-                  <h2 class="section-subtitle subtitle-about-work">
-                    Banking App Interface Concept
-                  </h2>
-                  <p class="section-text text-about-work">App</p>
-                </div></a
-              >
-            </li>
-            <li class="card-portfolio">
-              <a class="link links-portfolio" href=""
-                ><img
-                  width="360"
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="heder-style">
+    <div class="heder-container container">
+      <nav class="nav">
+        <a class="logo link" href="./index.html">Web<span class="logo-part-top">Studio</span></a>
+        <ul class="nav-list list">
+          <li class="heder-nav"><a class="list-items link nav-list-item" href="./index.html">Studio</a></li>
+          <li class="heder-nav">
+            <!DOCTYPE html>
+            <a class="list-items link nav-list-item active" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="heder-nav"><a class="list-items link nav-list-item" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="address">
+        <ul class="addres-list list">
+          <li>
+            <a class="contact-inf link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="contact-inf link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </header>
+  <main>
+    <section class="portfolio-section">
+      <div class="container">
+        <h1 hidden>Portfolio</h1>
+        <ul class="list flter-list">
+          <li><button class="filter" type="button">All</button></li>
+          <li><button class="filter" type="button">Web Site</button></li>
+          <li><button class="filter" type="button">App</button></li>
+          <li><button class="filter" type="button">Design</button></li>
+          <li><button class="filter" type="button">Marketing</button></li>
+        </ul>
+        <ul class="list card-list-portfolio">
+          <li class="card-portfolio">
+            <div class="portfolio-thumb">
+                <a class="link links-portfolio"
+                   href=""><img width="360"
+                   src="./images/banking-app.jpg"
+                   alt="Image with phone App" />
+                <div class="overlay">
+                  <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                    Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                </div>
+            </div>
+            <div class="portfolio-items">
+              <h2 class="section-subtitle subtitle-about-work">
+                Banking App Interface Concept
+              </h2>
+              <p class="section-text text-about-work">App</p>
+            </div></a>
+          </li>
+          <li class="card-portfolio">
+            <div class="portfolio-thumb">
+            <a class="link links-portfolio"
+                  href=""><img width="360"
                   src="./images/cashless-payment.jpg"
-                  alt="Phone photo"
-                />
-                <div class="portfolio-items">
-                  <h2 class="section-subtitle subtitle-about-work">
-                    Cashless Payment
-                  </h2>
-                  <p class="section-text text-about-work">Marketing</p>
-                </div>
-              </a>
-            </li>
-            <li class="card-portfolio">
-              <a class="link links-portfolio" href=""
-                ><img
-                  width="360"
-                  src="./images/meditation-app.jpg"
-                  alt="Photo of phone and computer"
-                />
-                <div class="portfolio-items">
-                  <h2 class="section-subtitle subtitle-about-work">
-                    Meditation App
-                  </h2>
-                  <p class="section-text text-about-work">App</p>
-                </div>
-              </a>
-            </li>
-            <li class="card-portfolio">
-              <a class="link links-portfolio" href=""
-                ><img
-                  width="360"
-                  src="./images/taxi-service.jpg"
-                  alt="Car photo"
-                />
-                <div class="portfolio-items">
-                  <h2 class="section-subtitle subtitle-about-work">
-                    Taxi Service
-                  </h2>
-                  <p class="section-text text-about-work">Marketing</p>
-                </div></a
-              >
-            </li>
-            <li class="card-portfolio">
-              <a class="link links-portfolio" href=""
-                ><img
-                  width="360"
-                  src="./images/screen-illustrations.jpg"
-                  alt="Phone screen image"
-                />
-                <div class="portfolio-items">
-                  <h2 class="section-subtitle subtitle-about-work">
-                    Screen Illustrations
-                  </h2>
-                  <p class="section-text text-about-work">Design</p>
-                </div></a
-              >
-            </li>
-            <li class="card-portfolio">
-              <a class="link links-portfolio" href=""
-                ><img
-                  width="360"
-                  src="./images/online-courses.jpg"
-                  alt="Picture of a girl"
-                />
-                <div class="portfolio-items">
-                  <h2 class="section-subtitle subtitle-about-work">
-                    Online Courses
-                  </h2>
-                  <p class="section-text text-about-work">Marketing</p>
-                </div></a
-              >
-            </li>
-            <li class="card-portfolio">
-              <a class="link links-portfolio" href=""
-                ><img
-                  width="360"
-                  src="./images/instagram-stories-concept.jpg"
-                  alt="Set of images"
-                />
-                <div class="portfolio-items">
-                  <h2 class="section-subtitle subtitle-about-work">
-                    Instagram Stories Concept
-                  </h2>
-                  <p class="section-text text-about-work">Design</p>
-                </div></a
-              >
-            </li>
-            <li class="card-portfolio">
-              <a class="link links-portfolio" href=""
-                ><img
-                  width="360"
-                  src="./images/organic-food.jpg"
-                  alt="Photo of fruit and vegetable"
-                />
-                <div class="portfolio-items">
-                  <h2 class="section-subtitle subtitle-about-work">
-                    Organic Food
-                  </h2>
-                  <p class="section-text text-about-work">Web Site</p>
-                </div></a
-              >
-            </li>
-            <li class="card-portfolio">
-              <a class="link links-portfolio" href=""
-                ><img
-                  width="360"
-                  src="./images/fresh-coffee.jpg"
-                  alt="Photo of a coffee"
-                />
-                <div class="portfolio-items">
-                  <h2 class="section-subtitle subtitle-about-work">
-                    Fresh Coffee
-                  </h2>
-                  <p class="section-text text-about-work">Web Site</p>
-                </div></a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
+                  alt="Phone photo" />
+              <div class="overlay">
+                <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                  Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+              </div>
+      </div>
+      <div class="portfolio-items">
+        <h2 class="section-subtitle subtitle-about-work">
+          Cashless Payment
+        </h2>
+        <p class="section-text text-about-work">Marketing</p>
+      </div>
+      </a>
+      </li>
+      <li class="card-portfolio">
+        <div class="portfolio-thumb">
+        <a class="link links-portfolio"
+             href=""><img width="360"
+             src="./images/meditation-app.jpg"
+             alt="Photo of phone and computer" />
+          <div class="overlay">
+            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+              Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+          </div>
+          </div>
+          <div class="portfolio-items">
+            <h2 class="section-subtitle subtitle-about-work">
+              Meditation App
+            </h2>
+            <p class="section-text text-about-work">App</p>
+          </div>
+        </a>
+      </li>
+      <li class="card-portfolio">
+        <div class="portfolio-thumb">
+        <a class="link links-portfolio"
+            href=""><img width="360"
+            src="./images/taxi-service.jpg"
+            alt="Car photo" />
+          <div class="overlay">
+            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+              Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+          </div>
+          </div>
+          <div class="portfolio-items">
+            <h2 class="section-subtitle subtitle-about-work">
+              Taxi Service
+            </h2>
+            <p class="section-text text-about-work">Marketing</p>
+          </div>
+        </a>
+      </li>
+      <li class="card-portfolio">
+        <div class="portfolio-thumb">
+        <a class="link links-portfolio"
+            href=""><img width="360"
+            src="./images/screen-illustrations.jpg"
+            alt="Phone screen image" />
+          <div class="overlay">
+            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+              Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+          </div>
+          </div>
+          <div class="portfolio-items">
+            <h2 class="section-subtitle subtitle-about-work">
+              Screen Illustrations
+            </h2>
+            <p class="section-text text-about-work">Design</p>
+          </div>
+        </a>
+      </li>
+      <li class="card-portfolio">
+        <div class="portfolio-thumb">
+        <a class="link links-portfolio"
+            href=""><img width="360"
+            src="./images/online-courses.jpg"
+            alt="Picture of a girl" />
+          <div class="overlay">
+            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+              Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+          </div>
+          </div>
+          <div class="portfolio-items">
+            <h2 class="section-subtitle subtitle-about-work">
+              Online Courses
+            </h2>
+            <p class="section-text text-about-work">Marketing</p>
+          </div>
+        </a>
+      </li>
+      <li class="card-portfolio">
+        <div class="portfolio-thumb">
+        <a class="link links-portfolio"
+            href=""><img width="360"
+            src="./images/instagram-stories-concept.jpg"
+            alt="Set of images" />
+          <div class="overlay">
+            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+              Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+          </div>
+          </div>
+          <div class="portfolio-items">
+            <h2 class="section-subtitle subtitle-about-work">
+              Instagram Stories Concept
+            </h2>
+            <p class="section-text text-about-work">Design</p>
+          </div>
+        </a>
+      </li>
+      <li class="card-portfolio">
+        <div class="portfolio-thumb">
+        <a class="link links-portfolio"
+            href=""><img width="360"
+            src="./images/organic-food.jpg"
+            alt="Photo of fruit and vegetable" />
+          <div class="overlay">
+            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+              Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+          </div>
+          </div>
+          <div class="portfolio-items">
+            <h2 class="section-subtitle subtitle-about-work">
+              Organic Food
+            </h2>
+            <p class="section-text text-about-work">Web Site</p>
+          </div>
+        </a>
+      </li>
+      <li class="card-portfolio">
+        <div class="portfolio-thumb">
+        <a class="link links-portfolio"
+            href=""><img width="360"
+            src="./images/fresh-coffee.jpg"
+            alt="Photo of a coffee" />
+          <div class="overlay">
+            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+              Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+          </div>
+          </div>
+          <div class="portfolio-items">
+            <h2 class="section-subtitle subtitle-about-work">
+              Fresh Coffee
+            </h2>
+            <p class="section-text text-about-work">Web Site</p>
+          </div>
+        </a>
+      </li>
+      </ul>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
     <div class="container footer-section">
       <div class="left-footer">
@@ -226,5 +259,6 @@
       </div>
     </div>
   </footer>
-  </body>
+</body>
+
 </html>
